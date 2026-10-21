@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Explore nature, discover biodiversity and join responsible hiking, nature walks and outdoor learning experiences with TBARC Hiking.">
+
+<meta name="theme-color" content="#075333">
+
+<title>TBARC Hiking | Explore Nature. Discover Biodiversity.</title>
+
+<link rel="icon" type="image/png" href="/favicon.png">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #075333;
+  --dark-green: #043b25;
+  --light-green: #f0f6ef;
+  --pale-green: #e4efe3;
+  --text: #202923;
+  --muted: #626a63;
+  --border: #e4ebe4;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+}
+
+/* HEADER */
+
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1180px;
+  margin: auto;
+  padding: 15px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  color: var(--green);
+  font-size: 23px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -.6px;
+  line-height: 1.25;
+}
+
+.brand span {
+  display: block;
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.nav-links a {
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #39443b;
+}
+
+.nav-links a:hover {
+  color: var(--green);
+}
+
+.nav-links .nav-cta {
+  background: var(--green);
+  color: #fff;
+  padding: 10px 17px;
+  border-radius: 7px;
+}
+
+.nav-links .nav-cta:hover {
+  background: var(--dark-green);
+  color: #fff;
+}
+
+/* HERO */
+
+.hero {
+  background:
+    linear-gradient(90deg,
+      rgba(2, 30, 18, .88),
+      rgba(4, 64, 35, .63)),
+    url("https://i.ibb.co/M5s4JF3D/Twin-lantana-camara-edit.jpg");
+
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 24px 105px;
+}
+
+.hero-inner {
+  max-width: 1120px;
+  margin: auto;
+}
+
+.hero-label {
+  display: inline-block;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.28);
+  padding: 6px 13px;
+  border-radius: 30px;
+  font-size: 11px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5.4vw, 62px);
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+  max-width: 760px;
+  margin: 0 0 20px;
+}
+
+.hero h1 span {
+  color: #c8e6bd;
+}
+
+.hero p {
+  font-size: 16px;
+  color: #e2eee4;
+  max-width: 690px;
+  margin: 0 0 28px;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.hero-tags span {
+  font-size: 12px;
+  color: #f1f7f0;
+  padding: 6px 12px;
+  border: 1px solid rgba(255,255,255,.28);
+  border-radius: 25px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 19px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.button-primary {
+  background: #fff;
+  color: var(--green);
+}
+
+.button-primary:hover {
+  background: #eaf3e9;
+  transform: translateY(-2px);
+}
+
+.button-outline {
+  border: 1px solid rgba(255,255,255,.65);
+  color: #fff;
+}
+
+.button-outline:hover {
+  background: rgba(255,255,255,.12);
+}
+
+/* COMMON SECTIONS */
+
+.container {
+  max-width: 1120px;
+  padding: 0 24px;
+  margin: auto;
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.section-soft {
+  background: #f7faf6;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 34px;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.7px;
+  font-weight: 800;
+  margin: 0 0 9px;
+}
+
+.section-heading h2 {
+  font-size: clamp(26px, 3vw, 35px);
+  line-height: 1.25;
+  letter-spacing: -.6px;
+  margin: 0 0 13px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ABOUT */
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.15fr .85fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.intro-copy h2 {
+  font-size: 31px;
+  line-height: 1.3;
+  margin: 0 0 17px;
+}
+
+.intro-copy p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0 0 15px;
+}
+
+.intro-panel {
+  background: var(--light-green);
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #e1ebdf;
+}
+
+.intro-panel h3 {
+  margin: 0 0 20px;
+  color: var(--green);
+  font-size: 19px;
+}
+
+.priority {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 19px;
+}
+
+.priority:last-child {
+  margin-bottom: 0;
+}
+
+.priority-mark {
+  width: 29px;
+  height: 29px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #dcebd9;
+  color: var(--green);
+  border-radius: 50%;
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.priority strong {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.priority p {
+  margin: 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* OBJECTIVES */
+
+.objective-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.objective-card {
+  padding: 25px 23px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.objective-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(7,83,51,.08);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: var(--light-green);
+  border-radius: 11px;
+  margin-bottom: 17px;
+  font-size: 23px;
+}
+
+.objective-card h3 {
+  font-size: 17px;
+  line-height: 1.4;
+  margin: 0 0 9px;
+}
+
+.objective-card p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* ACTIVITIES */
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.activity-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: #fff;
+  transition: box-shadow .2s ease;
+}
+
+.activity-card:hover {
+  box-shadow: 0 9px 24px rgba(7,83,51,.07);
+}
+
+.activity-number {
+  display: inline-block;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 800;
+  color: var(--green);
+  background: var(--light-green);
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-bottom: 13px;
+}
+
+.activity-card h3 {
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 0 0 10px;
+}
+
+.activity-card p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+/* PHILOSOPHY */
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.philosophy-panel {
+  background: var(--dark-green);
+  color: #fff;
+  padding: 35px;
+  border-radius: 15px;
+}
+
+.philosophy-panel .eyebrow {
+  color: #b8d9bf;
+}
+
+.philosophy-panel h2 {
+  font-size: 29px;
+  line-height: 1.25;
+  margin: 0 0 15px;
+}
+
+.philosophy-panel p {
+  color: #d6e6d9;
+  font-size: 14px;
+  margin: 0;
+}
+
+.philosophy-copy h3 {
+  font-size: 22px;
+  margin: 0 0 13px;
+}
+
+.philosophy-copy p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+/* RESPONSIBLE HIKING */
+
+.guidelines {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.guideline {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  padding: 19px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+}
+
+.guideline-icon {
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--light-green);
+  font-size: 17px;
+}
+
+.guideline h3 {
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+.guideline p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+}
+
+.leave-no-trace {
+  margin-top: 28px;
+  background: #e7f0e4;
+  padding: 27px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.leave-no-trace h3 {
+  color: var(--green);
+  font-size: 21px;
+  margin: 0 0 7px;
+}
+
+.leave-no-trace p {
+  color: #435b48;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* PARTICIPATION */
+
+.participation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.participation-card {
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: #fff;
+}
+
+.participation-card h3 {
+  font-size: 17px;
+  margin: 0 0 9px;
+}
+
+.participation-card p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+
+.text-link {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* CTA */
+
+.collaboration {
+  background: var(--dark-green);
+  color: #fff;
+  padding: 65px 24px;
+  text-align: center;
+}
+
+.collaboration-inner {
+  max-width: 760px;
+  margin: auto;
+}
+
+.collaboration h2 {
+  font-size: clamp(28px, 4vw, 39px);
+  line-height: 1.25;
+  margin: 0 0 15px;
+}
+
+.collaboration p {
+  color: #d6e6d9;
+  font-size: 14px;
+  margin: 0 auto 25px;
+  max-width: 650px;
+}
+
+.collaboration .button {
+  background: #fff;
+  color: var(--green);
+}
+
+.collaboration .button:hover {
+  background: #eaf3e9;
+}
+
+/* CONTACT */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  padding: 21px;
+  border: 1px solid var(--border);
+  border-radius: 11px;
+}
+
+.contact-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: var(--light-green);
+  font-size: 19px;
+}
+
+.contact-item h3 {
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+
+.contact-item p,
+.contact-item a {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-item a {
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: var(--green);
+}
+
+/* FOOTER */
+
+.footer {
+  background: #f5f8f4;
+  border-top: 1px solid var(--border);
+  padding: 27px 20px;
+  text-align: center;
+}
+
+.footer-brand {
+  font-size: 19px;
+  font-weight: 800;
+  color: var(--green);
+  margin-bottom: 5px;
+}
+
+.footer p {
+  font-size: 11px;
+  color: var(--muted);
+  margin: 5px 0;
+}
+
+.footer a {
+  color: var(--green);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .nav-links {
+    gap: 13px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .intro-grid {
+    gap: 25px;
+  }
+
+  .objective-grid,
+  .participation-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  html {
+    scroll-padding-top: 130px;
+  }
+
+  .nav-container {
+    padding: 14px 18px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+
+  .nav-links a {
+    font-size: 11px;
+  }
+
+  .nav-links .nav-cta {
+    padding: 7px 11px;
+  }
+
+  .hero {
+    padding: 62px 20px 68px;
+    background-position: center;
+  }
+
+  .hero h1 {
+    letter-spacing: -.7px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 0 19px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .intro-grid,
+  .activity-grid,
+  .philosophy-grid,
+  .guidelines,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .intro-copy h2 {
+    font-size: 27px;
+  }
+
+  .intro-panel,
+  .philosophy-panel {
+    padding: 24px;
+  }
+
+  .objective-grid,
+  .participation-grid {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .objective-card,
+  .activity-card,
+  .participation-card {
+    padding: 22px;
+  }
+
+  .leave-no-trace {
+    padding: 23px 18px;
+  }
+
+  .collaboration {
+    padding: 48px 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header class="site-header">
+  <div class="nav-container">
+
+    <a class="brand" href="#home">
+      TBARC
+      <span>HIKING & NATURE EXPLORATION</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#objectives">Objectives</a>
+      <a href="#activities">Activities</a>
+      <a href="#responsible">Trail Ethics</a>
+      <a href="#join">Join Us</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+
+    <span class="hero-label">
+      TBARC India · Outdoor Exploration
+    </span>
+
+    <h1>
+      Explore Nature.<br>
+      <span>Discover Biodiversity.</span><br>
+      Leave No Trace.
+    </h1>
+
+    <p>
+      Discover the natural world through hiking, biodiversity walks
+      and outdoor learning experiences. Every trail is an opportunity
+      to connect with nature, learn from the landscape and support
+      biodiversity conservation.
+    </p>
+
+    <div class="hero-tags">
+      <span>Hiking</span>
+      <span>Nature Exploration</span>
+      <span>Biodiversity Awareness</span>
+    </div>
+
+    <div class="hero-buttons">
+      <a class="button button-primary" href="#activities">
+        Explore Our Activities →
+      </a>
+
+      <a class="button button-outline" href="#join">
+        Join the Trail
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+  <div class="container">
+
+    <div class="intro-grid">
+
+      <div class="intro-copy">
+
+        <p class="eyebrow">About TBARC Hiking</p>
+
+        <h2>
+          Connecting People with Nature, One Trail at a Time
+        </h2>
+
+        <p>
+          TBARC Hiking is an initiative of the Tropical Biodiversity
+          Action and Research Centre (TBARC) that encourages people
+          to explore the natural world through hiking, nature walks
+          and outdoor learning experiences.
+        </p>
+
+        <p>
+          Every trail offers an opportunity to discover the beauty
+          of our natural landscapes, observe fascinating plant and
+          animal life, and understand the ecological importance of
+          the places we visit. From forest paths and mountain slopes
+          to streams and countryside trails, hiking helps us build
+          a deeper connection with nature.
+        </p>
+
+        <p>
+          Through guided hikes, biodiversity observation, nature
+          interpretation and community activities, TBARC Hiking
+          aims to combine outdoor recreation with environmental
+          awareness and conservation.
+        </p>
+
+      </div>
+
+      <div class="intro-panel">
+
+        <h3>What Guides Our Journey</h3>
+
+        <div class="priority">
+          <span class="priority-mark">01</span>
+          <div>
+            <strong>Explore with curiosity</strong>
+            <p>Discover landscapes and appreciate the natural world around us.</p>
+          </div>
+        </div>
+
+        <div class="priority">
+          <span class="priority-mark">02</span>
+          <div>
+            <strong>Learn from nature</strong>
+            <p>Observe biodiversity and understand ecological relationships.</p>
+          </div>
+        </div>
+
+        <div class="priority">
+          <span class="priority-mark">03</span>
+          <div>
+            <strong>Act responsibly</strong>
+            <p>Respect wildlife, habitats, local communities and trail regulations.</p>
+          </div>
+        </div>
+
+        <div class="priority">
+          <span class="priority-mark">04</span>
+          <div>
+            <strong>Conserve together</strong>
+            <p>Turn outdoor experiences into awareness and positive action.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OBJECTIVES -->
+
+<section class="section section-soft" id="objectives">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="eyebrow">Our Purpose</p>
+      <h2>Why TBARC Hiking?</h2>
+      <p>
+        We bring adventure, environmental learning and conservation
+        together to make outdoor experiences meaningful.
+      </p>
+    </div>
+
+    <div class="objective-grid">
+
+      <article class="objective-card">
+        <div class="card-icon">🌿</div>
+        <h3>Explore Nature</h3>
+        <p>
+          Discover forests, hills, streams and other natural
+          landscapes while appreciating their ecological value.
+        </p>
+      </article>
+
+      <article class="objective-card">
+        <div class="card-icon">🦋</div>
+        <h3>Discover Biodiversity</h3>
+        <p>
+          Observe plants, birds, insects, fungi and other forms
+          of life along the trail.
+        </p>
+      </article>
+
+      <article class="objective-card">
+        <div class="card-icon">🎒</div>
+        <h3>Learn Outdoors</h3>
+        <p>
+          Encourage nature-based learning, ecological awareness
+          and responsible exploration beyond the classroom.
+        </p>
+      </article>
+
+      <article class="objective-card">
+        <div class="card-icon">🌱</div>
+        <h3>Promote Conservation</h3>
+        <p>
+          Understand the importance of protecting habitats,
+          native species and natural ecosystems.
+        </p>
+      </article>
+
+      <article class="objective-card">
+        <div class="card-icon">🤝</div>
+        <h3>Build Community</h3>
+        <p>
+          Bring together students, researchers, nature enthusiasts
+          and outdoor explorers through shared experiences.
+        </p>
+      </article>
+
+      <article class="objective-card">
+        <div class="card-icon">♻️</div>
+        <h3>Travel Responsibly</h3>
+        <p>
+          Promote outdoor practices that minimise waste,
+          disturbance to wildlife and damage to habitats.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+
+<section class="section" id="activities">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="eyebrow">Explore With Us</p>
+      <h2>What We Do</h2>
+      <p>
+        Our activities connect outdoor exploration with biodiversity
+        discovery, ecological learning and responsible adventure.
+      </p>
+    </div>
+
+    <div class="activity-grid">
+
+      <article class="activity-card">
+        <span class="activity-number">Activity 01</span>
+        <h3>Nature Hikes</h3>
+        <p>
+          Explore scenic trails and natural landscapes while
+          developing a deeper appreciation for the environment.
+          Each hike provides an opportunity to experience the
+          landscape and understand its natural features.
+        </p>
+      </article>
+
+      <article class="activity-card">
+        <span class="activity-number">Activity 02</span>
+        <h3>Biodiversity Walks</h3>
+        <p>
+          Discover local flora and fauna through observation,
+          nature photography and interpretation. Learn to recognise
+          the diverse forms of life that often go unnoticed along
+          familiar trails.
+        </p>
+      </article>
+
+      <article class="activity-card">
+        <span class="activity-number">Activity 03</span>
+        <h3>Educational Expeditions</h3>
+        <p>
+          Create opportunities for students and nature enthusiasts
+          to learn about ecosystems, ecological interactions,
+          habitats and conservation through guided outdoor
+          experiences.
+        </p>
+      </article>
+
+      <article class="activity-card">
+        <span class="activity-number">Activity 04</span>
+        <h3>Responsible Adventure</h3>
+        <p>
+          Promote safe, inclusive and environmentally responsible
+          hiking practices. Encourage participants to follow trail
+          rules, respect natural habitats and minimise their
+          environmental footprint.
+        </p>
+      </article>
+
+      <article class="activity-card">
+        <span class="activity-number">Activity 05</span>
+        <h3>Community Activities</h3>
+        <p>
+          Bring people together through outdoor experiences,
+          environmental awareness programmes and collaborative
+          initiatives that encourage a shared responsibility
+          towards nature.
+        </p>
+      </article>
+
+      <article class="activity-card">
+        <span class="activity-number">Activity 06</span>
+        <h3>Nature Observation and Photography</h3>
+        <p>
+          Encourage participants to document landscapes, plants,
+          wildlife and ecological details through photography
+          and observation, always prioritising the well-being
+          of wildlife and habitats.
+        </p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PHILOSOPHY -->
+
+<section class="section section-soft" id="philosophy">
+  <div class="container">
+
+    <div class="philosophy-grid">
+
+      <div class="philosophy-panel">
+        <p class="eyebrow">Our Philosophy</p>
+
+        <h2>The Trail Is a Classroom</h2>
+
+        <p>
+          A hike is more than a journey through a landscape.
+          It is an opportunity to learn from nature, develop
+          curiosity and discover the connections that sustain
+          life around us.
+        </p>
+      </div>
+
+      <div class="philosophy-copy">
+
+        <h3>Every Step Can Teach Us Something</h3>
+
+        <p>
+          A tree, a butterfly, a stream or a patch of moss can
+          reveal fascinating stories about ecological relationships
+          and the natural world. Paying attention to these details
+          helps us recognise the value of biodiversity in everyday
+          landscapes.
+        </p>
+
+        <p>
+          At TBARC Hiking, we believe that meaningful experiences
+          in nature can inspire curiosity, encourage responsible
+          behaviour and strengthen our commitment to biodiversity
+          conservation.
+        </p>
+
+        <p>
+          Our aim is not simply to reach a destination, but to
+          understand, appreciate and protect the natural places
+          we experience along the way.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RESPONSIBLE HIKING -->
+
+<section class="section" id="responsible">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="eyebrow">Our Trail Ethics</p>
+      <h2>Our Commitment to Responsible Hiking</h2>
+      <p>
+        Exploring nature comes with a responsibility to protect it.
+        We encourage every participant to follow these principles
+        during hiking and outdoor activities.
+      </p>
+    </div>
+
+    <div class="guidelines">
+
+      <article class="guideline">
+        <div class="guideline-icon">♻️</div>
+        <div>
+          <h3>Carry Back Your Waste</h3>
+          <p>
+            Take all waste back with you and avoid single-use
+            plastics wherever possible.
+          </p>
+        </div>
+      </article>
+
+      <article class="guideline">
+        <div class="guideline-icon">🦌</div>
+        <div>
+          <h3>Respect Wildlife</h3>
+          <p>
+            Observe animals from a safe distance. Never chase,
+            feed, touch or deliberately disturb wildlife.
+          </p>
+        </div>
+      </article>
+
+      <article class="guideline">
+        <div class="guideline-icon">🥾</div>
+        <div>
+          <h3>Stay on Permitted Trails</h3>
+          <p>
+            Follow designated routes, protected-area rules
+            and the instructions of hike coordinators.
+          </p>
+        </div>
+      </article>
+
+      <article class="guideline">
+        <div class="guideline-icon">🌱</div>
+        <div>
+          <h3>Leave Nature Undisturbed</h3>
+          <p>
+            Avoid collecting plants, animals, rocks or other
+            natural materials. Leave them where they belong.
+          </p>
+        </div>
+      </article>
+
+      <article class="guideline">
+        <div class="guideline-icon">🔇</div>
+        <div>
+          <h3>Keep Noise to a Minimum</h3>
+          <p>
+            Respect the tranquillity of natural habitats and
+            avoid loud music or unnecessary disturbance.
+          </p>
+        </div>
+      </article>
+
+      <article class="guideline">
+        <div class="guideline-icon">🧭</div>
+        <div>
+          <h3>Prioritise Safety</h3>
+          <p>
+            Follow safety instructions, weather advisories
+            and coordinator guidance. Carry suitable equipment
+            and remain with your group.
+          </p>
+        </div>
+      </article>
+
+      <article class="guideline">
+        <div class="guideline-icon">🤝</div>
+        <div>
+          <h3>Respect Local Communities</h3>
+          <p>
+            Be considerate of local cultures, traditions,
+            livelihoods, private property and community spaces.
+          </p>
+        </div>
+      </article>
+
+      <article class="guideline">
+        <div class="guideline-icon">🌿</div>
+        <div>
+          <h3>Protect Habitat Integrity</h3>
+          <p>
+            Avoid trampling vegetation, damaging trails or
+            spreading seeds and plant material between habitats.
+          </p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="leave-no-trace">
+      <h3>Leave Only Footprints. Take Only Memories.</h3>
+      <p>
+        Explore responsibly. Learn continuously. Protect every trail.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- JOIN US -->
+
+<section class="section section-soft" id="join">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="eyebrow">Be Part of the Journey</p>
+      <h2>Join Us on the Trail</h2>
+      <p>
+        Whether you are an experienced hiker or discovering
+        hiking for the first time, there are many ways to
+        connect with nature and contribute to conservation.
+      </p>
+    </div>
+
+    <div class="participation-grid">
+
+      <article class="participation-card">
+        <h3>Students and Young Explorers</h3>
+        <p>
+          Discover biodiversity outside the classroom, develop
+          observation skills and learn about the natural
+          environment through outdoor experiences.
+        </p>
+        <a class="text-link"
+           href="mailto:tbarcindia@gmail.com?subject=TBARC%20Hiking%20Participation">
+          Express your interest →
+        </a>
+      </article>
+
+      <article class="participation-card">
+        <h3>Nature Enthusiasts and Hikers</h3>
+        <p>
+          Connect with like-minded people, explore natural
+          landscapes and participate in responsible hiking
+          and biodiversity awareness activities.
+        </p>
+        <a class="text-link"
+           href="mailto:tbarcindia@gmail.com?subject=TBARC%20Hiking%20Enquiry">
+          Get in touch →
+        </a>
+      </article>
+
+      <article class="participation-card">
+        <h3>Researchers and Volunteers</h3>
+        <p>
+          Contribute knowledge, assist with educational
+          activities and explore opportunities for community
+          engagement and nature-based learning.
+        </p>
+        <a class="text-link"
+           href="mailto:tbarcindia@gmail.com?subject=TBARC%20Hiking%20Volunteering">
+          Discuss participation →
+        </a>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CALL TO ACTION -->
+
+<section class="collaboration">
+  <div class="collaboration-inner">
+
+    <p class="eyebrow" style="color:#b8d9bf;">
+      Explore · Discover · Conserve
+    </p>
+
+    <h2>Let's Take the Trail Towards Conservation</h2>
+
+    <p>
+      Join TBARC Hiking to discover the biodiversity around you,
+      learn from the natural world and become part of a community
+      that values both outdoor adventure and environmental
+      conservation.
+    </p>
+
+    <a class="button"
+       href="mailto:tbarcindia@gmail.com?subject=TBARC%20Hiking%20Enquiry">
+      Connect with TBARC Hiking →
+    </a>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section" id="contact">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="eyebrow">Get in Touch</p>
+      <h2>Contact TBARC Hiking</h2>
+      <p>
+        Contact us to enquire about hiking activities,
+        educational expeditions, volunteering and potential
+        collaborations.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div>
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:tbarcindia@gmail.com">
+              tbarcindia@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">💬</div>
+        <div>
+          <h3>WhatsApp</h3>
+          <p>
+            <a href="https://wa.me/919446833667"
+               target="_blank"
+               rel="noopener noreferrer">
+              +91 94468 33667
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-icon">🌐</div>
+        <div>
+          <h3>TBARC Website</h3>
+          <p>
+            <a href="https://tbarc.in"
+               target="_blank"
+               rel="noopener noreferrer">
+              www.tbarc.in
+            </a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-brand">TBARC Hiking</div>
+
+  <p>
+    An initiative of the Tropical Biodiversity Action and
+    Research Centre (TBARC)
+  </p>
+
+  <p>
+    Hiking · Nature Exploration · Biodiversity Awareness
+  </p>
+
+  <p>
+    <a href="https://tbarc.in">Main Website</a>
+    &nbsp; | &nbsp;
+    <a href="mailto:tbarcindia@gmail.com">Contact</a>
+  </p>
+
+  <p>© 2026 TBARC. All rights reserved.</p>
+
+</footer>
+
+</body>
